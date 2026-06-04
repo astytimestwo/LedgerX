@@ -1,0 +1,60 @@
+{
+    "common": {
+        "save": "सहेजें",
+        "cancel": "रद्द करें",
+        "delete": "हटाएं",
+        "edit": "संपादित करें",
+        "new": "नया",
+        "actions": "कार्रवाई"
+    },
+    "nav": {
+        "dashboard": "डैशबोर्ड",
+        "vouchers": "वाउचर",
+        "ledger": "खाता बही",
+        "inventory": "माल सूची",
+        "gst": "जीएसटी रिटर्न",
+        "reports": "रिपोर्ट्स",
+        "settings": "सेटिंग्स"
+    },
+    "ledger": {
+        "groups": "बहीखाता समूह",
+        "accounts": "बहीखाता खाते",
+        "chartOfAccounts": "खातों का चार्ट",
+        "newGroup": "नया समूह (Ctrl+N)",
+        "newAccount": "नया खाता (Ctrl+N)",
+        "nature": "प्रकृति",
+        "parentGroup": "मूल समूह",
+        "openingBalance": "प्रारंभिक शेष (₹)",
+        "gstApplicable": "जीएसटी लागू",
+        "dr": "डेबिट (Dr)",
+        "cr": "क्रेडिट (Cr)"
+    },
+    "dashboard": {
+        "title": "डैशबोर्ड",
+        "subtitle": "आपके व्यापारिक वित्त का अवलोकन।",
+        "bankAndCash": "बैंक और नकद",
+        "receivables": "प्राप्य",
+        "payables": "देय",
+        "recentActivity": "हाल की गतिविधि",
+        "date": "तारीख",
+        "voucherNo": "वाउचर संख्या",
+        "type": "प्रकार",
+        "amount": "रकम",
+        "noRecentVouchers": "कोई हालिया वाउचर नहीं मिला।"
+    },
+    "vouchers": {
+        "daybook": "डे बुक",
+        "daybookDesc": "सभी पोस्ट किए गए वाउचर की सूची",
+        "newVoucher": "नया वाउचर (Ctrl+N)",
+        "date": "तारीख",
+        "voucherNo": "वाउचर संख्या",
+        "type": "प्रकार",
+        "narration": "विवरण",
+        "debitTotal": "कुल डेबिट",
+        "creditTotal": "कुल क्रेडिट",
+        "actions": "कार्रवाई",
+        "noVouchersFound": "कोई वाउचर नहीं मिला। आरंभ करने के लिए एक बनाएं।",
+        "confirmDelete": "क्या आप वाकई इस वाउचर को हटाना चाहते हैं? इसे पूर्ववत नहीं किया जा सकता है।",
+        "loading": "वाउचर लोड हो रहे हैं..."
+    }
+}

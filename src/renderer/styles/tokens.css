@@ -1,0 +1,43 @@
+:root {
+  /* Light Theme (default) */
+  --color-bg-base: rgba(255, 255, 255, 0.1);
+  --color-bg-surface: rgba(255, 255, 255, 0.3);
+  --color-bg-subtle: rgba(255, 255, 255, 0.15);
+  --color-bg-overlay: rgba(255, 255, 255, 0.6);
+  --color-border: rgba(208, 208, 208, 0.5);
+  --color-border-strong: rgba(160, 160, 160, 0.6);
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+  --color-text-disabled: #BBBBBB;
+  --color-accent: #1A56DB;
+  --color-accent-hover: #1246C2;
+  --color-success: #1A7F45;
+  --color-warning: #B45309;
+  --color-error: #C0392B;
+  --color-debit: #C0392B;
+  --color-credit: #1A7F45;
+
+  --font-primary: 'Inter', 'Noto Sans Devanagari', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+.dark {
+  --color-bg-base: rgba(0, 0, 0, 0.1);
+  --color-bg-surface: rgba(36, 36, 36, 0.4);
+  --color-bg-subtle: rgba(46, 46, 46, 0.2);
+  --color-bg-overlay: rgba(0, 0, 0, 0.6);
+  --color-border: rgba(255, 255, 255, 0.15);
+  --color-border-strong: rgba(255, 255, 255, 0.3);
+  --color-text-primary: #F0F0F0;
+  --color-text-secondary: #AAAAAA;
+  --color-text-muted: #777777;
+  --color-text-disabled: #444444;
+  --color-accent: #4B8EF5;
+  --color-accent-hover: #6BA3F7;
+  --color-success: #34C579;
+  --color-warning: #F59E0B;
+  --color-error: #E05252;
+  --color-debit: #E05252;
+  --color-credit: #34C579;
+}
