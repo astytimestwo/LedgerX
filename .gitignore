@@ -21,6 +21,7 @@ pnpm-debug.log*
 # Local caches and generated debug artifacts
 .codex-docs-cache/
 tailwind-debug-output.css
+mindmap.md
 
 # OS/editor files
 .DS_Store

@@ -4,18 +4,21 @@ LedgerX is a desktop accounting app experiment built with Electron, React, SQLit
 
 This project started as a personal attempt to see how far I could push modern AI coding tools while still steering the product like a real app: testing flows, filing findings, fixing rough edges, and keeping the codebase moving toward something usable. It is not a polished commercial product. It is a working record of learning, building, breaking things, and tightening them back up.
 
-## What It Does
+## Current State
 
-LedgerX focuses on small-business accounting workflows:
+LedgerX is incomplete. It has working pieces, unfinished areas, and accounting/GST logic that should not be treated as production-ready. The app is useful as a prototype and learning artifact, not as software to rely on for real compliance or financial reporting.
 
-- Company setup and unlock flow
-- User login and role-aware navigation
-- Voucher entry and day book views
+Areas explored in the app include:
+
+- Company setup, unlock, login, and role-aware navigation
+- Voucher entry and day book screens
 - Ledger groups and chart of accounts
-- Trial balance, ledger statement, profit and loss, and balance sheet screens
-- GST report screens and HSN/SAC management
+- Basic report screens such as trial balance, ledger statement, profit and loss, and balance sheet
+- Early GST screens and HSN/SAC management
 - Inventory item groups, items, stock summary, and stock ledger views
 - Backup, audit, and session-management screens
+
+The GST parts are especially experimental. They do not cover every GST rule, edge case, filing requirement, reconciliation scenario, or compliance workflow.
 
 ## Tech Stack
 
@@ -61,7 +64,7 @@ npm run build
 
 ## Project Notes
 
-The app is still evolving. Some screens are functional, some are placeholders for future workflows, and some areas were shaped by manual user-flow testing notes in `findings.md` and planning notes in `mindmap.md`.
+The app is still evolving. Some screens are functional, some are placeholders for future workflows, and some areas were shaped by manual user-flow testing notes in `findings.md`.
 
 This repo is also intentionally a learning artifact. The goal was not just to generate code, but to keep asking whether the app behaved like something a normal person could use.
 
