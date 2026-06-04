@@ -3,7 +3,6 @@ import { create } from 'zustand'
 interface UIState {
     sidebarExpanded: boolean
     theme: 'light' | 'dark'
-    language: 'en' | 'hi'
     isVoucherModalOpen: boolean
     showShortcutHelp: boolean
     showSearch: boolean
@@ -14,7 +13,6 @@ interface UIState {
     showCommandPalette: 'goto' | 'switchto' | null
     toggleSidebar: () => void
     setTheme: (theme: 'light' | 'dark') => void
-    setLanguage: (lang: 'en' | 'hi') => void
     setVoucherModalOpen: (isOpen: boolean) => void
     setShowShortcutHelp: (show: boolean) => void
     setShowSearch: (show: boolean) => void
@@ -30,7 +28,6 @@ interface UIState {
 export const useUIStore = create<UIState>((set) => ({
     sidebarExpanded: true,
     theme: 'light',
-    language: 'en',
     isVoucherModalOpen: false,
     showShortcutHelp: false,
     showSearch: false,
@@ -41,7 +38,6 @@ export const useUIStore = create<UIState>((set) => ({
     showCommandPalette: null,
     toggleSidebar: () => set((state) => ({ sidebarExpanded: !state.sidebarExpanded })),
     setTheme: (theme) => set({ theme }),
-    setLanguage: (language) => set({ language }),
     setVoucherModalOpen: (isOpen) => set({ isVoucherModalOpen: isOpen }),
     setShowShortcutHelp: (show) => set({ showShortcutHelp: show }),
     setShowSearch: (show) => set({ showSearch: show }),

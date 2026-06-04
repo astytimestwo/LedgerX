@@ -70,9 +70,7 @@ const App: React.FC = () => {
         viewHistory,
         popView,
         showCommandPalette,
-        setShowCommandPalette,
-        language,
-        setLanguage
+        setShowCommandPalette
     } = useUIStore()
 
     const handleLogout = useCallback(() => {
@@ -112,7 +110,6 @@ const App: React.FC = () => {
     useShortcut('alt+p', () => toastNotAvailable('Print'), 'global', 'Print')
     useShortcut('alt+e', () => toastNotAvailable('Export'), 'global', 'Export')
     
-    useShortcut('ctrl+k', () => setLanguage(language === 'en' ? 'hi' : 'en'), 'global', 'Select Display Language')
     useShortcut('ctrl+w', () => toastNotAvailable('Data Entry Language'), 'global', 'Select Data Entry Language')
     
     useShortcut('f2', () => toastNotAvailable('Date Selection'), 'global', 'Change Date')

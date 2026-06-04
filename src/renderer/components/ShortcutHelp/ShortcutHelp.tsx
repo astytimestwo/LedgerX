@@ -31,7 +31,6 @@ const SHORTCUT_GROUPS: ShortcutGroup[] = [
             { combo: 'Alt+M', description: 'Open Share / E-mail / WhatsApp menu', status: 'Not yet available' },
             { combo: 'Alt+P / Ctrl+P', description: 'Print current voucher or report', status: 'Contextual' },
             { combo: 'Alt+E / Ctrl+E', description: 'Export current voucher or report', status: 'Contextual' },
-            { combo: 'Ctrl+K', description: 'Toggle screen display language (EN/HI)', status: 'Available' },
             { combo: 'Ctrl+W', description: 'Toggle keyboard data entry language', status: 'Not yet available' },
             { combo: 'F2', description: 'Change current voucher entry date', status: 'Not yet available' },
             { combo: 'Alt+F2', description: 'Change reporting period / active year', status: 'Not yet available' },

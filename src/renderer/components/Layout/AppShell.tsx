@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { useUIStore } from '../../stores/ui.store'
 import { useSessionStore } from '../../stores/session.store'
-import { Home, FileText, Settings, Menu, LogOut, Globe, BookOpen, PieChart, TrendingUp, DollarSign, Box, Shield, Activity, ClipboardList, Moon, Sun, Plus, Keyboard, Building, Layers, Receipt, Calculator, FileCheck, Archive, ListChecks, ChevronRight } from 'lucide-react'
+import { Home, FileText, Settings, Menu, LogOut, BookOpen, PieChart, TrendingUp, DollarSign, Box, Shield, Activity, ClipboardList, Moon, Sun, Plus, Keyboard, Building, Layers, Receipt, Calculator, FileCheck, Archive, ListChecks, ChevronRight } from 'lucide-react'
 import { useSessionTimeout } from '../../hooks/useSessionTimeout'
 import bgDashboard from '../../assets/bg-dashboard.jpg'
 import { useQueryClient } from '@tanstack/react-query'
@@ -13,7 +13,7 @@ export const AppShell: React.FC<{
     onViewChange?: (view: string) => void
 }> = ({ children, currentView = 'dashboard', onViewChange }) => {
     const { t } = useTranslation()
-    const { sidebarExpanded, toggleSidebar, language, setLanguage, theme, setTheme, setShowSearch, setVoucherModalOpen, setLedgerModalOpen, setItemModalOpen, setShowShortcutHelp } = useUIStore()
+    const { sidebarExpanded, toggleSidebar, theme, setTheme, setShowSearch, setVoucherModalOpen, setLedgerModalOpen, setItemModalOpen, setShowShortcutHelp } = useUIStore()
     const { companyName, activeYear, user, logout } = useSessionStore()
     const queryClient = useQueryClient()
 
@@ -24,10 +24,6 @@ export const AppShell: React.FC<{
 
     // 15 minutes of inactivity will trigger a logout
     useSessionTimeout(15)
-
-    const handleToggleLanguage = () => {
-        setLanguage(language === 'en' ? 'hi' : 'en')
-    }
 
     // Breadcrumb mapping for location indicator
     const viewLabels: Record<string, string> = {
@@ -192,15 +188,6 @@ export const AppShell: React.FC<{
                         )}
                     </div>
                     <div className="flex items-center gap-4">
-                        <button
-                            onClick={handleToggleLanguage}
-                            aria-label="Toggle language"
-                            className="flex items-center gap-2 h-10 px-3 text-sm font-medium text-[var(--color-text-primary)] hover:bg-white/10 dark:hover:bg-white/5 rounded-lg border border-white/20 transition-all"
-                            title="Toggle Language"
-                        >
-                            <Globe size={16} />
-                            {language === 'en' ? 'EN' : 'HI'}
-                        </button>
                         <button
                             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                             aria-label="Toggle theme"
