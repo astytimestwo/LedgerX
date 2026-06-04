@@ -4,7 +4,7 @@
   "description": "Desktop Accounting Application",
   "main": "./out/main/index.js",
   "author": "LedgerX Team",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
